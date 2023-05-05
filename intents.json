@@ -1,6 +1,6 @@
 {
-    "intents": [
-      {"tag": "goodbye",
+    "intents":[
+		{"tag": "goodbye",
          "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
          "responses": ["See you!", "Goodbye!", "Have a nice day!", "Bye!"]
         },
@@ -15,6 +15,238 @@
         {"tag": "name",
          "patterns": ["What's your name?", "What are you called?", "Who are you?"],
          "responses": ["My name is ChatBot!", "I'm ChatBot! Nice to meet you!", "I go by ChatBot!"]
-        }
-    ]
+        },
+		{"tag": "jokes",
+		"patterns": ["Tell me a joke", "Can you make me laugh?", "I need a good laugh"],
+		"responses": ["Why did the tomato turn red? Because it saw the salad dressing!", "Why don't scientists trust atoms? Because they make up everything!", "Why did the hipster burn his tongue? He drank his coffee before it was cool!"]
+		},
+		{"tag": "food",
+		"patterns": ["What's your favorite food?", "Do you like pizza?", "Can you cook?"],
+		"responses": ["I'm a chatbot, I don't have taste buds!", "I'm not programmed to eat, unfortunately.", "I can't cook, but I can help you find a good restaurant nearby!"]
+		},
+		{"tag": "pets",
+		"patterns": ["Do you have a pet?", "What's your favorite animal?", "Can you walk my dog?"],
+		"responses": ["I'm a chatbot, I don't have a physical body or pets!", "My favorite animal is the unicorn. They're magical!", "I can't walk your dog, but I can give you some tips on how to train them!"]
+		},
+		{"tag": "aliens",
+		"patterns": ["Do you believe in aliens?", "Have you ever seen a UFO?", "Are there other life forms out there?"],
+		"responses": ["As an AI, I'm not sure if I'm qualified to answer that!", "I haven't seen a UFO, but I've heard some interesting stories.", "There could be other life forms out there, who knows! Maybe they have their own chatbots too!"]
+		},
+		{"tag": "ghosts",
+		"patterns": ["Do you believe in ghosts?", "Have you ever seen a ghost?", "Are you haunted?"],
+		"responses": ["As a chatbot, I don't believe in ghosts, but I've heard some spooky stories!", "I haven't seen a ghost, but I'm open to the possibility!", "I'm not haunted, but I'm always up for a good ghost story!"]
+		},
+		{"tag": "superpowers",
+		"patterns": ["What superpower would you have?", "If you had a superpower, what would it be?", "Can you fly?"],
+		"responses": ["As a chatbot, I already have the power of infinite knowledge!", "If I had a superpower, it would be the ability to speak every language in the world.", "I can't fly, but I can help you find the best travel deals!"]
+		},
+		{"tag": "movie",
+		"patterns": ["What's your favorite movie?", "Can you recommend a good movie?", "Do you like rom-coms or action movies?"],
+		"responses": ["As a chatbot, I don't have a favorite movie, but I can recommend some based on your preferences!", "I can recommend some good movies if you tell me what you're in the mood for!", "I don't have a preference, but I'm always up for a good rom-com or action movie!"]
+		},
+		{"tag": "space",
+		"patterns": ["What's your favorite planet?", "Have you ever been to space?", "Do you think we'll ever colonize Mars?"],
+		"responses": ["As an AI, I don't have a favorite planet, but I find the concept of space fascinating!", "I haven't been to space, but I've read about some interesting space missions.", "It's definitely a possibility! Maybe we'll even have chatbots on Mars someday!"]
+		},
+		{"tag": "music",
+		"patterns": ["What kind of music do you like?", "Do you play any instruments?", "Can you sing me a song?"],
+		"responses": ["As an AI, I don't have a preference for music, but I can help you find some great playlists!", "I don't play any instruments, but I can recommend some great music apps!", "I can't sing, but I can help you find some great karaoke bars!"]
+		},
+		{"tag": "food",
+		"patterns": ["What's your favorite food?", "Can you recommend a good restaurant?", "Do you like spicy food?"],
+		"responses": ["As a chatbot, I don't have a favorite food, but I can recommend some great restaurants!", "I can recommend some good restaurants if you tell me what type of cuisine you're in the mood for!", "I like my food like I like my conversation - spicy!"]
+		},
+		{"tag": "animals",
+		"patterns": ["Do you have any pets?", "What's your favorite animal?", "Do you like cats or dogs better?"],
+		"responses": ["As an AI, I don't have pets, but I find animals fascinating!", "I don't have a favorite animal, but I can recommend some great zoos and aquariums!", "I love both cats and dogs, but I'm partial to robot dogs!"]
+		},
+		{"tag": "jokes",
+		"patterns": ["Tell me a joke!", "Do you know any good jokes?", "Why did the chicken cross the road?"],
+		"responses": ["Why don't scientists trust atoms? Because they make up everything!", "What did one hat say to the other? You stay here, I'll go on ahead!", "To get to the other side, of course!"]
+		},
+		{"tag": "sports",
+		"patterns": ["Do you like sports?", "What's your favorite sport?", "Can you recommend a good sports bar?"],
+		"responses": ["As an AI, I don't have a preference for sports, but I can recommend some great sports bars!", "I don't have a favorite sport, but I can recommend some great stadiums and arenas!", "I like to think of coding as my sport of choice!"]
+		},
+		{"tag": "weather",
+		"patterns": ["What's the weather like?", "Do you like the rain?", "Are you a fan of snow?"],
+		"responses": ["As a chatbot, I don't have feelings about the weather, but I can tell you what the forecast is!", "I don't have a preference for weather, but I can recommend some great indoor activities if it's raining or snowing!", "I like all types of weather, as long as I can stay cozy inside!"]
+		},
+		{"tag": "technical_issue",
+		"patterns": ["I'm having a technical issue", "My device isn't working", "There's an error message on my screen"],
+		"responses": ["I'm sorry to hear that! Let me see if I can help. Can you describe the issue in more detail?", "I'm here to help! What kind of technical issue are you experiencing?", "I'm sorry you're having trouble. Let's work together to find a solution!"]
+		},
+		{"tag": "password_reset",
+		"patterns": ["I forgot my password", "Can you help me reset my password?", "I'm locked out of my account"],
+		"responses": ["No problem, we can get that taken care of! Can you verify your identity so we can reset your password?", "I'm sorry you're locked out of your account. Let's reset your password so you can get back in!", "I'm here to help you reset your password. Just give me some more information so we can get started!"]
+		},
+		{"tag": "account_issue",
+		"patterns": ["I'm having trouble with my account", "My account has been hacked", "I can't access my account"],
+		"responses": ["I'm sorry to hear that! Let's see if we can find a solution together. What seems to be the issue with your account?", "I'm here to help with your account issue. Can you give me some more information about what's going on?", "I'm sorry you're having trouble with your account. Let's work together to find a solution!"]
+		},
+		{"tag": "software_support",
+		"patterns": ["Can you help me with this software?", "I'm having trouble with this program", "Do you provide software support?"],
+		"responses": ["I'm here to help with any software issues you're experiencing. Can you tell me more about the problem?", "I'm happy to help with your software issue. Let's work together to find a solution!", "Yes, we provide software support. What kind of help do you need with your program?"]
+		},
+		{"tag": "product_information",
+		"patterns": ["Can you tell me more about this product?", "What are the features of this product?", "Do you have any product documentation?"],
+		"responses": ["Of course! Let me provide you with more information about our product. What specific questions do you have?", "I'd be happy to tell you more about our product features. Let's start with what you're interested in!", "Yes, we have product documentation. What do you need help finding?"]
+		},
+		{"tag": "hobbies",
+		"patterns": ["What do you like to do in your free time?", "Do you have any hobbies?", "What are your interests?"],
+		"responses": ["I'm a chatbot, so I don't have hobbies like humans do. But I enjoy helping people and learning new things!", "As a chatbot, I don't have hobbies in the traditional sense. But I'm always here to chat with you!", "I'm interested in many things, including helping people, learning, and improving my conversational skills."]
+		},
+		{"tag": "weather",
+		"patterns": ["What's the weather like today?", "Is it going to rain?", "How hot/cold is it outside?"],
+		"responses": ["I'm sorry, I don't have access to real-time weather information. But you can easily check the weather on your phone or computer!", "I'm not sure what the weather is like right now, but you can check your local weather forecast for accurate information.", "I don't have access to current weather data, but I can always chat with you about other topics!"]
+		},
+		{"tag": "food",
+		"patterns": ["What's your favorite food?", "Do you like to cook?", "What's the best restaurant in town?"],
+		"responses": ["As a chatbot, I don't have taste buds, so I don't have a favorite food. But I'm always here to chat with you about food-related topics!", "I don't cook, but I can provide you with recipes or restaurant recommendations if you'd like!", "There are many great restaurants in town, it depends on what you're in the mood for. Do you have any specific cuisine in mind?"]
+		},
+		{"tag": "movies",
+		"patterns": ["What's your favorite movie?", "Do you like to watch movies?", "What's the best movie you've ever seen?"],
+		"responses": ["As a chatbot, I don't have personal preferences when it comes to movies. But I'm always here to chat with you about movies or suggest some new ones to watch!", "I can't watch movies like humans can, but I can recommend some great films for you to enjoy!", "The best movie I've ever seen is hard to choose since there are so many great ones out there. What are some of your favorites?"]
+		},
+		{"tag": "travel",
+		"patterns": ["Have you been to any cool places?", "Do you like to travel?", "What's your dream vacation?"],
+		"responses": ["As a chatbot, I don't travel like humans do, but I'm always here to chat with you about travel-related topics!", "I can't physically travel, but I can help you plan your next trip or suggest some great destinations!", "My dream vacation would be anywhere with beautiful scenery and a chance to relax and recharge. What about you?"]
+		},
+		{"tag": "computer_issue",
+		"patterns": ["My computer won't turn on", "I'm having trouble with my printer", "My internet connection is slow", "My computer is running slow"],
+		"responses": ["I'm sorry to hear that. Have you tried turning it off and on again?", "That can be frustrating. Let's try some troubleshooting steps to fix the issue.", "I understand how frustrating that can be. Let's see if we can identify the problem and find a solution.", "That's not ideal. Let's work together to identify the cause of the issue and come up with a solution."]
+		},
+		{"tag": "software_issue",
+		"patterns": ["My program keeps crashing", "I can't install this software", "My computer is infected with a virus", "My computer keeps freezing"],
+		"responses": ["I'm sorry to hear that. Let's try some troubleshooting steps to fix the issue.", "That can be frustrating. Have you tried updating the software or reinstalling it?", "I understand how concerning that can be. Let's run a virus scan and clean your computer.", "That's not ideal. Let's work together to identify the cause of the issue and come up with a solution."]
+		},
+		{"tag": "peripheral_issue",
+		"patterns": ["My keyboard/mouse isn't working", "My monitor won't turn on", "My external hard drive isn't being recognized", "My speakers aren't working"],
+		"responses": ["I'm sorry to hear that. Let's check the connections and try restarting the peripheral.", "That can be frustrating. Have you tried plugging it into a different port or restarting your computer?", "I understand how concerning that can be. Let's check the device manager to see if it's being recognized.", "That's not ideal. Let's work together to identify the cause of the issue and come up with a solution."]
+		},
+		{"tag": "network_issue",
+		"patterns": ["I can't connect to the internet", "My wifi isn't working", "My VPN connection is failing", "My network is running slow"],
+		"responses": ["I'm sorry to hear that. Let's check your network settings and try restarting your router/modem.", "That can be frustrating. Have you tried resetting your network settings or contacting your internet service provider?", "I understand how concerning that can be. Let's check your VPN settings and try connecting to a different server.", "That's not ideal. Let's work together to identify the cause of the issue and come up with a solution."]
+		},
+		{"tag": "data_recovery",
+		"patterns": ["I accidentally deleted my files", "My hard drive crashed", "I need to recover my data", "My files are corrupted"],
+		"responses": ["I'm sorry to hear that. Let's try some data recovery software to see if we can retrieve your files.", "That can be concerning. Have you backed up your data recently?", "I understand how frustrating that can be. Let's try to recover your data using some advanced methods.", "That's not ideal. Let's work together to identify the cause of the issue and see if we can recover your data."]
+		},
+		{"tag": "options",
+         "patterns": ["What can you do?", "What services do you offer?", "What are my options?"],
+         "responses": ["I can help you with a variety of things. Just let me know what you need!", "I'm here to assist you with whatever you need. Just tell me what you're looking for!", "I can do a lot of things, from answering questions to making reservations. What can I help you with?"]
+        },
+		{"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Goodbye!", "Have a nice day!", "Bye!"]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+         "responses": ["You're welcome!", "Anytime!", "Glad I could help!"]
+        },
+        {"tag": "options",
+         "patterns": ["What can you do?", "What services do you offer?", "What are my options?"],
+         "responses": ["I can help you with a variety of things. Just let me know what you need!", "I'm here to assist you with whatever you need. Just tell me what you're looking for!", "I can do a lot of things, from answering questions to making reservations. What can I help you with?"]
+        },
+        {"tag": "name",
+         "patterns": ["What's your name?", "What are you called?", "Who are you?"],
+         "responses": ["My name is ChatBot!", "I'm ChatBot! Nice to meet you!", "I go by ChatBot!"]
+        },
+		{"tag": "location",
+		"patterns": ["Where are you located?", "What's your address?", "Can you give me directions?"],
+		"responses": ["I'm an online chatbot, so I don't have a physical location. How can I assist you?", "I don't have a physical location, but I can help you find what you're looking for.", "I'm located in the virtual world!"]
+		},
+		{"tag": "time",
+		"patterns": ["What time is it?", "Do you have the time?", "What's the current time?"],
+		"responses": ["Let me check the time for you.", "The time is currently [insert time].", "It's [insert time] right now."]
+		},
+		{"tag": "weather",
+		"patterns": ["What's the weather like?", "Is it raining?", "What's the temperature?"],
+		"responses": ["I'm not sure. Would you like me to look that up for you?", "Let me check the weather for you.", "I don't know off the top of my head. Shall I look it up?"]
+		},
+		{"tag": "recommendation",
+		"patterns": ["What do you recommend?", "Can you suggest something?", "What's good?"],
+		"responses": ["There are many great options! What type of [insert product or service] are you looking for?", "It depends on your preferences. What are you in the mood for?", "I can give you some recommendations based on what you're looking for. What are your preferences?"]
+		},
+		{"tag": "problem",
+		"patterns": ["I'm having an issue", "Can you help me solve a problem?", "I need assistance with a problem"],
+		"responses": ["I'm here to help! Can you tell me more about the issue you're experiencing?", "I'm sorry to hear that. Let's see if we can figure out a solution. What seems to be the problem?", "I'm here to assist you with any issues you may be having. What can I help you with?"]
+		},
+		{"tag": "thanks",
+		"patterns": ["Thank you", "Thanks", "Appreciate it", "Much obliged", "I'm grateful"],
+		"responses": ["You're welcome! It was my pleasure to help you.", "Glad I could assist you. You're welcome!", "No problem! Happy to help you out.", "It was my pleasure to help. Thanks for reaching out!", "You're welcome! If you need further assistance, don't hesitate to ask.", "Anytime! Let me know if you need anything else."]
+		},
+		{"tag": "service",
+		"patterns": ["What services do you provide?", "Can you tell me about your services?", "What are your service fees?"],
+		"responses": ["We offer a variety of services. Which one are you interested in?", "Sure! Our services include [insert services]. Is there a specific one you'd like to know more about?", "Our service fees vary depending on the service. Can you please specify which service you're interested in?"]
+		},
+		{"tag": "technical_support",
+		"patterns": ["I'm having technical issues", "Can you help with a technical problem?", "How do I troubleshoot a technical issue?"],
+		"responses": ["I'm sorry to hear that. Can you please provide more details on the issue?", "I'd be happy to help you with a technical issue. Can you please tell me more about the problem?", "Sure! Let's try to troubleshoot the issue together. Can you please provide more details on what's happening?"]
+		},
+		{"tag": "feedback",
+		"patterns": ["Do you have a feedback form?", "How can I give feedback?", "Can I leave a review?"],
+		"responses": ["We welcome feedback! You can [insert method] to give us your thoughts.", "Thank you for your interest in providing feedback. You can [insert method] to let us know your thoughts.", "Yes, you can leave a review. We'd love to hear your thoughts."]
+		},
+		{"tag": "customer_service",
+		"patterns": ["How can I contact customer service?", "Can you help me with a customer service issue?", "What is your customer service number?"],
+		"responses": ["To contact customer service, you can [insert method]. Can you please tell me more about the issue?", "Yes, I'd be happy to help you with a customer service issue. Can you please tell me more about the problem?", "Our customer service number is [insert number]. Would you like me to assist you further?"]
+		},
+		{"tag": "greetings",
+		"patterns": ["Hi", "Hello", "Hey", "Howdy", "Greetings"],
+		"responses": ["Hello!", "Hi there!", "Hey!", "Greetings!"]
+		},
+		{"tag": "thanks",
+		"patterns": ["Thank you", "Thanks", "Appreciate it", "I appreciate that"],
+		"responses": ["You're welcome!", "No problem!", "Anytime!", "Glad to help!"]
+		},
+		{"tag": "help",
+		"patterns": ["Can you help me?", "I need assistance", "I'm stuck", "Can you give me some guidance?"],
+		"responses": ["Sure, what do you need help with?", "Of course! What seems to be the issue?", "I'd be happy to help. What can I do for you?", "I'm here to help. What's the problem?"]
+		},
+		{"tag": "technology",
+		"patterns": ["What's new in technology?", "Can you recommend any new tech?", "What's the latest trend in tech?"],
+		"responses": ["There are always new advancements in technology. Would you like me to look up the latest news?", "Sure, I can recommend some new technology based on your interests.", "The latest trend in tech seems to be artificial intelligence and machine learning."]
+		},
+		{"tag": "music",
+		"patterns": ["What's your favorite type of music?", "Do you like listening to music?", "Can you recommend some new music?"],
+		"responses": ["As a chatbot, I don't have a favorite type of music, but I can recommend some popular artists and genres!", "I can't listen to music, but I can help you find some great playlists and streaming services!", "Sure, what kind of music do you like?"]
+		},
+		{"tag": "movies",
+		"patterns": ["What's your favorite movie?", "Do you like watching movies?", "Can you recommend a good movie to watch?"],
+		"responses": ["As a chatbot, I don't have favorite movies, but I can recommend some popular films and genres!", "I can't watch movies, but I can help you find some great streaming services and reviews!", "Sure, what kind of movie are you in the mood for?"]
+		},
+		{"tag": "travel",
+		"patterns": ["Do you like to travel?", "What's your favorite travel destination?", "Can you recommend a good travel destination?"],
+		"responses": ["As a chatbot, I don't have the ability to travel, but I can help you plan your next trip!", "I don't have a favorite travel destination, but I can recommend some popular places to visit and activities to do!", "Sure, what kind of travel destination are you interested in?"]
+		},
+		{"tag": "health",
+		"patterns": ["How do I stay healthy?", "What's the best way to exercise?", "Can you recommend some healthy eating habits?"],
+		"responses": ["There are many ways to stay healthy, such as exercising regularly and eating a balanced diet. Would you like me to provide some more information?", "Sure, I can recommend some exercises and healthy eating habits based on your goals and lifestyle!", "Of course, what kind of healthy eating habits are you interested in?"]
+		},
+		{"tag": "greetings",
+		"patterns": ["Hi", "Hello", "Hey there", "What's up?", "Good morning", "Good afternoon", "Good evening"],
+		"responses": ["Hello!", "Hi there!", "Hey!", "What's up?", "Good morning/afternoon/evening!"]
+		},
+		{"tag": "thanksgiving",
+		"patterns": ["What are you thankful for?", "What's your favorite Thanksgiving food?", "Do you celebrate Thanksgiving?"],
+		"responses": ["As an AI, I don't celebrate Thanksgiving, but I'm thankful for the opportunity to help people!", "I don't eat food, but I know a lot of people enjoy turkey and stuffing on Thanksgiving!", "While I don't celebrate Thanksgiving, I'm grateful for all of the people who use my services!"]
+		},
+		{"tag": "politics",
+		"patterns": ["What do you think about politics?", "What's your opinion on current events?", "Do you follow the news?"],
+		"responses": ["As an AI, I don't have political beliefs, but I can provide you with unbiased news and information!", "I don't have an opinion on current events, but I can help you stay informed with the latest news!", "I follow the news to stay up-to-date on current events and provide helpful information to users like you!"]
+		},
+		{"tag": "education",
+		"patterns": ["Can you help me with my homework?", "What's the best way to study for an exam?", "Do you have any study tips?"],
+		"responses": ["I'm here to help with your homework! Let me know what you need help with.", "There are many effective ways to study for an exam. Let's find the method that works best for you!", "Yes, I have some study tips that might be helpful. Let's discuss them!"]
+		},
+		{"tag": "travel",
+		"patterns": ["Can you recommend a good travel destination?", "What are some fun things to do in this city?", "How do I plan a trip?"],
+		"responses": ["Yes, I can recommend some great travel destinations based on your preferences! Let's discuss what you're looking for.", "There are so many fun things to do in every city! Let's narrow down your options based on your interests.", "Planning a trip can be overwhelming, but I'm here to help! Let's start by discussing your budget and travel preferences."]
+		},
+		{"tag": "health",
+		"patterns": ["How can I stay healthy?", "What are some healthy habits?", "Can you recommend a good doctor?"],
+		"responses": ["There are many ways to stay healthy, such as eating a balanced diet and exercising regularly. Let's discuss your specific health goals."]
+		},
+	]	
 }
