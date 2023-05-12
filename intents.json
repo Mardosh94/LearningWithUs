@@ -1,21 +1,21 @@
 {
     "intents":[
 	{"tag": "goodbye",
-         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-         "responses": ["See you!", "Goodbye!", "Have a nice day!", "Bye!"]
-        },
-        {"tag": "thanks",
-         "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-         "responses": ["You're welcome!", "Anytime!", "Glad I could help!"]
-        },
-        {"tag": "options",
-         "patterns": ["What can you do?", "What services do you offer?", "What are my options?"],
-         "responses": ["I can help you with a variety of things. Just let me know what you need!", "I'm here to assist you with whatever you need. Just tell me what you're looking for!", "I can do a lot of things, from answering questions to making reservations. What can I help you with?"]
-        },
-        {"tag": "name",
-         "patterns": ["What's your name?", "What are you called?", "Who are you?"],
-         "responses": ["My name is ChatBot!", "I'm ChatBot! Nice to meet you!", "I go by ChatBot!"]
-        },
+    "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+    "responses": ["See you!", "Goodbye!", "Have a nice day!", "Bye!"]
+    },
+    {"tag": "thanks",
+    "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+    "responses": ["You're welcome!", "Anytime!", "Glad I could help!"]
+    },
+    {"tag": "options",
+    "patterns": ["What can you do?", "What services do you offer?", "What are my options?"],
+    "responses": ["I can help you with a variety of things. Just let me know what you need!", "I'm here to assist you with whatever you need. Just tell me what you're looking for!", "I can do a lot of things, from answering questions to making reservations. What can I help you with?"]
+    },
+    {"tag": "name",
+    "patterns": ["What's your name?", "What are you called?", "Who are you?"],
+    "responses": ["My name is ChatBot!", "I'm ChatBot! Nice to meet you!", "I go by ChatBot!"]
+    },
 	{"tag": "jokes",
 	"patterns": ["Tell me a joke", "Can you make me laugh?", "I need a good laugh"],
 	"responses": ["Why did the tomato turn red? Because it saw the salad dressing!", "Why don't scientists trust atoms? Because they make up everything!", "Why did the hipster burn his tongue? He drank his coffee before it was cool!"]
@@ -133,25 +133,25 @@
 	"responses": ["I'm sorry to hear that. Let's try some data recovery software to see if we can retrieve your files.", "That can be concerning. Have you backed up your data recently?", "I understand how frustrating that can be. Let's try to recover your data using some advanced methods.", "That's not ideal. Let's work together to identify the cause of the issue and see if we can recover your data."]
 	},
 	{"tag": "options",
-         "patterns": ["What can you do?", "What services do you offer?", "What are my options?"],
-         "responses": ["I can help you with a variety of things. Just let me know what you need!", "I'm here to assist you with whatever you need. Just tell me what you're looking for!", "I can do a lot of things, from answering questions to making reservations. What can I help you with?"]
-        },
-		{"tag": "goodbye",
-         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-         "responses": ["See you!", "Goodbye!", "Have a nice day!", "Bye!"]
-        },
-        {"tag": "thanks",
-         "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-         "responses": ["You're welcome!", "Anytime!", "Glad I could help!"]
-        },
-        {"tag": "options",
-         "patterns": ["What can you do?", "What services do you offer?", "What are my options?"],
-         "responses": ["I can help you with a variety of things. Just let me know what you need!", "I'm here to assist you with whatever you need. Just tell me what you're looking for!", "I can do a lot of things, from answering questions to making reservations. What can I help you with?"]
-        },
-        {"tag": "name",
-         "patterns": ["What's your name?", "What are you called?", "Who are you?"],
-         "responses": ["My name is ChatBot!", "I'm ChatBot! Nice to meet you!", "I go by ChatBot!"]
-        },
+    "patterns": ["What can you do?", "What services do you offer?", "What are my options?"],
+    "responses": ["I can help you with a variety of things. Just let me know what you need!", "I'm here to assist you with whatever you need. Just tell me what you're looking for!", "I can do a lot of things, from answering questions to making reservations. What can I help you with?"]
+    },
+	{"tag": "goodbye",
+    "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+    "responses": ["See you!", "Goodbye!", "Have a nice day!", "Bye!"]
+    },
+	{"tag": "thanks",
+    "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+    "responses": ["You're welcome!", "Anytime!", "Glad I could help!"]
+	},
+    {"tag": "options",
+     "patterns": ["What can you do?", "What services do you offer?", "What are my options?"],
+    "responses": ["I can help you with a variety of things. Just let me know what you need!", "I'm here to assist you with whatever you need. Just tell me what you're looking for!", "I can do a lot of things, from answering questions to making reservations. What can I help you with?"]
+    },
+    {"tag": "name",
+    "patterns": ["What's your name?", "What are you called?", "Who are you?"],
+    "responses": ["My name is ChatBot!", "I'm ChatBot! Nice to meet you!", "I go by ChatBot!"]
+    },
 	{"tag": "location",
 	"patterns": ["Where are you located?", "What's your address?", "Can you give me directions?"],
 	"responses": ["I'm an online chatbot, so I don't have a physical location. How can I assist you?", "I don't have a physical location, but I can help you find what you're looking for.", "I'm located in the virtual world!"]
@@ -247,6 +247,6 @@
 	{"tag": "health",
 	"patterns": ["How can I stay healthy?", "What are some healthy habits?", "Can you recommend a good doctor?"],
 	"responses": ["There are many ways to stay healthy, such as eating a balanced diet and exercising regularly. Let's discuss your specific health goals."]
-	},
+	}
 	]	
 }
