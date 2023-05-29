@@ -1,109 +1,51 @@
-import nltk
-nltk.download('punkt')
-from nltk.stem.lancaster import LancasterStemmer
-stemmer = LancasterStemmer()
+import tkinter as tk
+from chat import ChatBot
 
-import numpy as np
-import tflearn
-import tensorflow as tf
-import random
-import json
 
-with open('intents.json') as file:
-    data = json.load(file)
+class BotApp:
+    def __init__(self, master):
+        self.master = master
+        self.master.title("ChatBot")
 
-# Preprocessing data
-words = []
-labels = []
-docs_x = []
-docs_y = []
+        # create chatbot object
+        self.chatbot = ChatBot('intents.json')
 
-for intent in data['intents']:
-    for pattern in intent['patterns']:
-        # Tokenize each word in the pattern and add it to the list of words
-        wrds = nltk.word_tokenize(pattern)
-        words.extend(wrds)
-        docs_x.append(wrds)
-        docs_y.append(intent['tag'])
+        # create widgets
+        self.label = tk.Label(self.master, text="ChatBot")
+        self.label.pack()
 
-    if intent['tag'] not in labels:
-        labels.append(intent['tag'])
+        self.chat_history = tk.Text(self.master, width=50, height=20)
+        self.chat_history.pack()
 
-# Stem and lower case the words
-words = [stemmer.stem(w.lower()) for w in words if w != "?"]
-words = sorted(list(set(words)))
+        self.input_box = tk.Entry(self.master, width=50)
+        self.input_box.pack()
+        self.input_box.bind('<Return>', self.send_message)
 
-labels = sorted(labels)
+        self.send_button = tk.Button(self.master, text="Send", command=self.send_message)
+        self.send_button.pack()
 
-# Create training and testing data
-training = []
-output = []
-out_empty = [0 for _ in range(len(labels))]
+    def send_message(self, event=None):
+        # get user input
+        user_input = self.input_box.get()
+        self.input_box.delete(0, tk.END)
 
-for x, doc in enumerate(docs_x):
-    bag = []
+        # display user input in chat history
+        self.chat_history.insert(tk.END, "You: " + user_input + "\n")
 
-    wrds = [stemmer.stem(w.lower()) for w in doc]
+        if user_input.lower() == "quit":
+            self.master.quit()
+            return
 
-    for w in words:
-        if w in wrds:
-            bag.append(1)
-        else:
-            bag.append(0)
+        # get bot response
+        bot_response = self.chatbot.get_response(user_input)
 
-    output_row = out_empty[:]
-    output_row[labels.index(docs_y[x])] = 1
+        # display bot response in chat history
+        self.chat_history.insert(tk.END, "Bot: " + str(bot_response) + "\n")
 
-    training.append(bag)
-    output.append(output_row)
+        # scroll to the end of the chat history
+        self.chat_history.see(tk.END)
 
-training = np.array(training)
-output = np.array(output)
 
-# Build the model
-tf.compat.v1.reset_default_graph()
-
-net = tflearn.input_data(shape=[None, len(training[0])])
-net = tflearn.fully_connected(net, 8)
-net = tflearn.fully_connected(net, 8)
-net = tflearn.fully_connected(net, len(output[0]), activation='softmax')
-net = tflearn.regression(net)
-
-model = tflearn.DNN(net)
-
-# Train the model
-model.fit(training, output, n_epoch=1000, batch_size=8, show_metric=True)
-model.save('model.tflearn')
-
-# Chatting with the bot
-def bag_of_words(s, words):
-    bag = [0 for _ in range(len(words))]
-
-    s_words = nltk.word_tokenize(s)
-    s_words = [stemmer.stem(word.lower()) for word in s_words]
-
-    for se in s_words:
-        for i, w in enumerate(words):
-            if w == se:
-                bag[i] = 1
-
-    return np.array(bag)
-
-def chat():
-    print("Start talking with the bot (type quit to stop)!")
-    while True:
-        inp = input("You: ")
-        if inp.lower() == "quit":
-            break
-
-        results = model.predict([bag_of_words(inp, words)])[0]
-        results_index = np.argmax(results)
-        tag = labels[results_index]
-
-        for tg in data["intents"]:
-            if tg['tag'] == tag:
-                responses = tg['responses']
-
-        print(random.choice(responses))
-
-chat()
+root = tk.Tk()
+app = BotApp(root)
+root.mainloop()
