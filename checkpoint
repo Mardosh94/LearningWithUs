@@ -1,2 +1,2 @@
-model_checkpoint_path: "C:\\Users\\Marcin\\PycharmProjects\\PBL0.1\\model.tflearn"
-all_model_checkpoint_paths: "C:\\Users\\Marcin\\PycharmProjects\\PBL0.1\\model.tflearn"
+model_checkpoint_path: "E:\\PythonProjects\\pythonProject\\model.tflearn"
+all_model_checkpoint_paths: "E:\\PythonProjects\\pythonProject\\model.tflearn"
